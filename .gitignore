@@ -1,0 +1,15 @@
+# Raw/large data regenerated locally — see data/README.md
+data/censo_sector/
+data/maps/CNE_parroquias_desde2013.*
+data/maps/parroquias_homologadas.*
+data/maps/sectores_raw/CapaSectores.zip
+data/maps/sectores_raw/extracted/sectores_anonimizados.gpkg
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
