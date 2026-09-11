@@ -1,13 +1,6 @@
 # Segregación política y socioeconómica intraurbana en Quito
 
-Repositorio de datos y código reproducible para un artículo académico en preparación sobre la asociación entre estructura socioeconómica y clivaje político a nivel de zona/sector censal (751 zonas, ~7.200 sectores) en el Distrito Metropolitano de Quito. El manuscrito no se publica aquí — este repositorio cubre solo los datos y el pipeline, para que el análisis sea auditable y reproducible independientemente del estado de revisión del artículo.
-
-## Nota sobre el origen del pipeline
-
-Parte del pipeline de datos aquí incluido nace de un ejercicio personal del autor de análisis territorial de la carrera municipal de Quito 2026 — **no un encargo ni trabajo de consultoría contratado**. Aun así, este repositorio **excluye deliberadamente** todo componente de ese pipeline dedicado a priorización o mensaje de campaña — no incluye ranking de prioridad, framing de "oportunidad" para ningún candidato, ni el nombre de campaña o movimiento alguno, por mantener el enfoque académico del trabajo.
-
-**Qué se excluyó específicamente:** los scripts `build_opportunity_map.py` y `build_priority_list.py` del pipeline original, y todas sus salidas — la única parte de ese pipeline que nombra al candidato/movimiento y codifica framing de campaña (p. ej. notas de texto libre tipo "mensaje de seguridad/empleo" o etiquetas de tier tipo "Bastión a consolidar"). También se excluyó `build_sector_opportunity.py` y su salida por ser un análisis alternativo a nivel de sector (modelo predictivo de margen) que no corresponde al enfoque de clustering a nivel de zona de este trabajo. Todo lo que sí está en este repositorio (7 scripts, 9 tablas de salida) fue verificado el 2026-09-10 para confirmar que ninguna columna nombra candidato o campaña.
-
+Repositorio de datos y código reproducible para un artículo académico en preparación sobre la asociación entre estructura socioeconómica y clivaje político a nivel de zona/sector censal (751 zonas, ~7.200 sectores) en el Distrito Metropolitano de Quito.
 ## Estructura
 
 ```
