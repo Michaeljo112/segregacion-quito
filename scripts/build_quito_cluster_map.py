@@ -20,7 +20,7 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 SECTORES_GPKG = ROOT / "data" / "maps" / "sectores_raw" / "extracted" / "dmq_sectores.gpkg"
-CLUSTERS = ROOT / "analitica_elecciones_uio_alcaldia" / "output" / "zonas_dmq_clusters.csv"
+CLUSTERS = ROOT / "output" / "zonas_dmq_clusters.csv"
 OUT_DIR = ROOT / "papers" / "02_quito_microdatos_segregacion" / "figures"
 
 # Same validated palette as the nacional map (scripts/build_cluster_map.py):
