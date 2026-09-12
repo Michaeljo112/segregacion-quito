@@ -5,8 +5,8 @@ data/maps/parroquias_homologadas.*
 data/maps/sectores_raw/CapaSectores.zip
 data/maps/sectores_raw/extracted/sectores_anonimizados.gpkg
 
-# Paper-generation pipeline scripts — kept private
-scripts/
+# Manuscript-generation script — kept private
+scripts/build_manuscript_iconos.py
 
 # Python
 __pycache__/
