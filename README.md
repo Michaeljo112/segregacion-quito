@@ -1,6 +1,6 @@
 # Segregación política y socioeconómica intraurbana en Quito
 
-Repositorio de datos y código reproducible para un artículo académico en preparación sobre la asociación entre estructura socioeconómica y clivaje político a nivel de zona/sector censal (751 zonas, ~7.200 sectores) en el Distrito Metropolitano de Quito.
+Repositorio de datos y código reproducible para estudiar la asociación entre estructura socioeconómica y clivaje político a nivel de zona/sector censal (751 zonas, ~7.200 sectores) en el Distrito Metropolitano de Quito.
 ## Estructura
 
 ```
@@ -30,7 +30,3 @@ Fuentes públicas: [INEC](https://www.ecuadorencifras.gob.ec/) (censo 2022, a ni
 ## Licencia
 
 El código (scripts/) se distribuye bajo licencia MIT — ver [LICENSE](LICENSE). Los datos redistribuidos en `data/` y `output/` provienen de fuentes públicas de gobierno (INEC, CNE); revisar sus términos de uso antes de reutilizar o redistribuir.
-
-## Cita
-
-Citación formal pendiente hasta contar con versión sometida/publicada.
