@@ -86,9 +86,14 @@ python scripts/build_zonal_satellite_features.py  # requiere cuenta Google Earth
 
 # 6. Clustering de perfiles socioeconómicos de zona
 python scripts/cluster_zonal_features.py
+
+# 7. Figura 1 (mapa de clusters, requiere dmq_sectores.gpkg, ya incluido)
+python scripts/build_quito_cluster_map.py
 ```
 
-Todas las salidas ya están en `../output/` — no hace falta re-ejecutar nada para verificar las tablas del paper, solo para regenerar desde la fuente cruda.
+Todas las salidas ya están en `../output/` y la figura en `papers/02_quito_microdatos_segregacion/figures/` — no hace falta re-ejecutar nada para verificar las tablas ni la figura del paper, solo para regenerar desde la fuente cruda.
+
+**Verificado reproducible end-to-end el 2026-09-11:** se corrió el paso 6 desde los datos ya incluidos y coincidió exactamente (`git diff` vacío) con lo ya versionado (tabla sección 5.2), y el paso 7 después de corregir un bug (commit `9106fb5`): `build_quito_cluster_map.py` tenía hardcodeada la ruta `analitica_elecciones_uio_alcaldia/output/zonas_dmq_clusters.csv` — una carpeta privada del autor que nunca estuvo en este repo, así que el script fallaba (`FileNotFoundError`) en cualquier clon fresco. Ya corregido para leer `output/zonas_dmq_clusters.csv` de este mismo repo.
 
 **No incluido, deliberadamente:**
 - `build_opportunity_map.py` y `build_priority_list.py` (y sus salidas) — específicos de la carrera municipal 2026, fuera del enfoque académico del paper. Ver README.md principal.
